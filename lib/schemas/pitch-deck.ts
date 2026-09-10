@@ -3,7 +3,7 @@ import { z } from "zod";
 export const SlideSchema = z.object({
   title: z.string().min(3).max(80),
   content: z.string().min(20).max(500),
-  imagePronpt: z.string().min(10).max(300),
+  imagePrompt: z.string().min(10).max(300),
 });
 
 export const pitchDeckSchema = z.object({
